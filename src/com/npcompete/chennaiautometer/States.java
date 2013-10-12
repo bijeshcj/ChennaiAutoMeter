@@ -1,5 +1,5 @@
 package com.npcompete.chennaiautometer;
 public enum States{
-	STATIC,WALKING,SLOW_DRIVING,FAST_DRIVING,CALL
+	STATIC,VERY_SLOW_DRIVING,SLOW_DRIVING,FAST_DRIVING,CALL
 }
 

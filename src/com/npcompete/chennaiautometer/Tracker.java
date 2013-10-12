@@ -34,7 +34,7 @@ public class Tracker implements LocationListener{
 	    System.out.println("location Longitude:"+m_Location.getLongitude());
 	    }
 	    System.out.println("getLocation():"+getLocation());
-	    
+	     
 	    }
 
 	public Location getLocation() {

@@ -94,7 +94,7 @@ public class BaseService extends Service{
        
        public boolean compare_LatitudeLongitude(){
     	   
-    	   Toast.makeText(this, " pastDistance "+pastDistance+" currentDistance "+currentDistance,Toast.LENGTH_SHORT).show();
+//    	   Toast.makeText(this, " pastDistance "+pastDistance+" currentDistance "+currentDistance,Toast.LENGTH_SHORT).show();
 
            if(pastDistance.getLatitude() == currentDistance.getLatitude() && pastDistance.getLongitude() == currentDistance.getLongitude()){
                return false;
