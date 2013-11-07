@@ -1,0 +1,31 @@
+CAM-1) divide the distance by 1000 -- in progress 
+
+CAM-2) create shared prefs and keep updating in the shared prefs 
+      -- start Location 
+      -- next Location 
+      -- a_kilometer_over 
+      -- HowManyKilometers
+      -- end Location
+      
+CAM-3) start the service which will save the start Location
+      (3A) while moving keep saving the next location, while saving find the distance between start Location and next Location
+            if(distance > 1 km)
+                -- save the location to a_kilometer_over
+                -- add and save HomeManyKilometers with 1
+                -- update the UI with the value 
+      -- again save the next Location and now compare it with  a_kilometer_over and follow (3A) replace start Location with a_kilometer_over
+      
+CAM-4) when the destination is reached then stop the service 
+      -- save end Location 
+      -- find the distance between a_kilometer_over and end Location
+      -- Update the UI
+      -- Update HowManyKilometers 
+      -- Show the HowmanyKilometers travelled 
+CAM-5) Show in map start locations to all the location till end location     
+
+CAM-6) Turn on the GPS when you click the service using reflection 
+            
+   
+      
+                
+               

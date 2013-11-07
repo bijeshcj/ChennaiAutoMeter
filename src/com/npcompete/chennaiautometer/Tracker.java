@@ -2,6 +2,9 @@ package com.npcompete.chennaiautometer;
 
 
 
+import com.npcompete.chennaiautometer.logger.S;
+import com.npcompete.chennaiautometer.logger.Severe;
+
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
@@ -39,6 +42,7 @@ public class Tracker implements LocationListener{
 
 	public Location getLocation() {
 	    try {
+	    	S.Log(Severe.LOW, "getLocation....");
 	        locationManager = (LocationManager) mContext
 	                .getSystemService(Context.LOCATION_SERVICE);
 
@@ -55,6 +59,7 @@ public class Tracker implements LocationListener{
 	        else {
 	            this.canGetLocation = true;
 	            if (isNetworkEnabled) {
+	            	S.Log(Severe.LOW, "isNetworkEnabled location....");
 	                locationManager.requestLocationUpdates(
 	                        LocationManager.NETWORK_PROVIDER,
 	                        MIN_TIME_BW_UPDATES,
@@ -70,7 +75,9 @@ public class Tracker implements LocationListener{
 	                }
 	            }
 	            if (isGPSEnabled) {
+	            	S.Log(Severe.LOW, "isGPSEnabled location....");
 	                if (location == null) {
+	                	
 	                    locationManager.requestLocationUpdates(
 	                            LocationManager.GPS_PROVIDER,
 	                            MIN_TIME_BW_UPDATES,
